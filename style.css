@@ -1,0 +1,284 @@
+
+
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(240, 80%, 25%);
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker';
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: limegreen;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header & Nav */
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-items a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: limegreen;
+    cursor: pointer;
+}
+
+.nav-items button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: limegreen;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    text-align: center;
+}
+
+a:hover {
+    color: orange;
+}
+
+button:hover {
+    color: orange;
+}
+
+/* About */
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(20, 100%, 37%);
+    border-bottom: solid orange 0.1rem;
+    border-top: solid orange 0.1rem;
+}
+
+.mission h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.mission p {
+    margin: 0 2rem 2rem 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 40rem;
+    text-align: center;
+}
+
+.mission span {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.mission a {
+    color: hsl(240, 80%, 25%);
+    cursor: pointer;
+}
+
+.mission a:hover {
+    color: violet;
+}
+
+.mission-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mission-photos img {
+    max-width: 30rem;
+    height: auto;
+    margin: 2rem;
+}
+
+/* Meet-Ups */
+
+#meet-ups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(240, 80%, 25%);
+    border-bottom: solid orange 0.1rem;
+}
+
+.upcoming h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+table, thead, td {
+    border: 2px lightgray solid;
+    padding: 2rem;
+    border-collapse: collapse;
+    margin: 2rem;
+    overflow-x: auto;
+    background-color: darkgray;
+}
+
+thead td {
+    color: hsl(20, 100%, 37%);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+tbody td {
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Activity Photos */
+#join {
+    background-color: hsl(20, 100%, 37%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid orange 0.1rem;
+}
+
+#join h2 {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.activity-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-photos img {
+    max-width: 20rem;
+    height: auto;
+    margin: 2rem;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid orange 0.1rem;
+}
+
+#footer .contact {
+    display: inline-flex;
+    color: limegreen;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.contact p {
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+.contact p span {
+    font-weight: bold;
+}
+
+#footer .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.nav a {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    color: hsl(20, 100%, 37%);
+    cursor: pointer;
+}
+
+.nav a:hover {
+    color: limegreen;
+}
+
+#footer .copyright {
+    width: 100%;
+    text-align: center;
+    color: limegreen;
+    font-size: 0.75rem;
+}
+
+/* Responsive Media Queries */
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    html {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    html {
+        font-size: 5px;
+    }
+}
